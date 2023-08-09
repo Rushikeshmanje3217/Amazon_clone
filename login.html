@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Button Example</title>
+  <style>
+    /* Add some basic styling to the button */
+    #loginButton {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #007BFF;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <button id="loginButton">Login</button>
+
+  <script>
+    // Get a reference to the button element
+    const loginButton = document.getElementById('loginButton');
+
+    // Add a touchstart event listener to the button
+    loginButton.ontouchstart = function() {
+      // Redirect to the login page when the button is touched
+      window.location.href = 'login.html'; // Replace 'login.html' with the actual login page URL
+    };
+  </script>
+</body>
+</html>
